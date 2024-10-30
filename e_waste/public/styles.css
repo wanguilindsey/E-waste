@@ -1,0 +1,375 @@
+body {
+    background-color: #FAF7F0;
+    font-family: Arial, sans-serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.auth-container, .report-ewaste-container {
+    max-width: 400px;
+    width: 90vw;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: black;
+    font-size: 22px;
+    line-height: 1.2;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1.5px solid #F0E3C2;
+    background-color: #FAF7F0;
+    color: black;
+}
+
+input::placeholder {
+    color: #A17D1C;
+}
+
+select option {
+    color: #A17D1C;
+}
+
+select option:first-child {
+    color: #A17D1C;
+    display: none;
+}
+
+button {
+    width: 50%;
+    padding: 8px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: #A17D1C;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #916d17;
+}
+
+.google-login-button, .google-signup-button {
+    background-color: #FAF7F0;
+    width: 60%;
+    margin: 15px auto;
+    color: #A17D1C;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid #A17D1C;
+}
+
+.google-login-button i, .google-signup-button i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.google-login-button:hover, .google-signup-button:hover {
+    background-color: #c13c31;
+}
+
+.signup-link a, .login-link a {
+    text-decoration: none;
+    color: #A17D1C; /* Same as button color */
+}
+  
+.signup-link a:hover, .login-link a:hover {
+    color: #916d17; /* Darker on hover */
+}
+
+.forgot-password {
+    display: block;
+    font-size: 12px;
+    text-align: left;
+    color: black;
+    text-decoration: none;
+}
+
+.signup-link, .login-link {
+    margin-top: 20px;
+}
+
+.or-container {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+.line {
+    flex: 1;
+    height: 0.5px;
+    background-color: #ccc;
+    border: none;
+    max-width: 20%;
+}
+  
+.or-text {
+    margin: 0 10px;
+    color: #666;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.resend-link {
+    color: #A17D1C;
+    text-decoration: none;
+}
+  
+.resend-link:hover {
+    color: #916d17;
+}
+
+.notification {
+    color: green;
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.password-instructions {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.upload-photo-container {
+    border: 2px dashed #F0E3C2;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+.upload-label {
+    color: #A17D1C;
+    display: block; /* Block display for label */
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cancel-button {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #F0E3C2;
+    color: #A17D1C;
+    cursor: pointer;
+    width: 48%; /* Ensuring both buttons fit nicely */
+}
+
+.submit-button {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #A17D1C;
+    color: #F0E3C2;
+    cursor: pointer;
+    width: 48%;
+}
+
+.submit-button:hover {
+    background-color: #916d17;
+}
+
+.cancel-button:hover {
+    background-color: #e0d0a8;
+}
+
+.dashboard-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+.report-ewaste-section, 
+.recent-submissions-section, 
+.learn-more-section, 
+.contact-support-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #FAF7F0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    color: #A17D1C;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.report-button, 
+.learn-more-button, 
+.contact-button, 
+.view-all-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background-color: #A17D1C;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.report-button:hover, 
+.learn-more-button:hover, 
+.contact-button:hover, 
+.view-all-link:hover {
+    background-color: #916d17;
+}
+
+.recent-submissions-section h3 {
+    font-size: 20px;
+    color: #A17D1C;
+    margin-bottom: 15px;
+}
+
+.submissions-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.submission-card {
+    padding: 15px;
+    background-color: #F0E3C2;
+    border-radius: 8px;
+    border: 1px solid #A17D1C;
+}
+
+.submission-card h4 {
+    font-size: 18px;
+    color: #A17D1C;
+}
+
+.submission-card p {
+    margin: 5px 0;
+    color: black;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: #FAF7F0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #A17D1C;
+    border-bottom: 1px solid #F0E3C2;
+}
+
+.menu-icon i {
+    font-size: 24px;
+    cursor: pointer;
+    color: #A17D1C;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.title-icon {
+    font-size: 22px;
+    color: #A17D1C;
+}
+
+.title-container h1 {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-icons i {
+    font-size: 20px;
+    cursor: pointer;
+    color: #A17D1C;
+}
+
+.notification-icon:hover,
+.account-icon:hover {
+  color: #916d17;
+}
+  
+
+@media (max-width: 768px) {
+    h2 {
+      font-size: 20px;  /* Slightly smaller heading for mobile */
+    }
+  
+    button, .google-login-button, .google-signup-button {
+      font-size: 14px;  /* Adjust button font size for mobile */
+      padding: 10px;   /* Adjust button padding for mobile */
+    }
+  
+    input {
+      padding: 10px;   /* Adjust input padding for mobile */
+    }
+  
+    .auth-container, .report-ewaste-container {
+      padding: 15px;   /* Adjust container padding for mobile */
+    }
+
+    .dashboard-container {
+        padding: 10px;
+    }
+
+    .report-button, .learn-more-button, .contact-button, .view-all-link {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .submission-card {
+        padding: 10px;
+    }
+  }
