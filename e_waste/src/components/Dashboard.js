@@ -63,7 +63,7 @@ const Dashboard = () => {
                 <h3>Need assistance?</h3>
                 <p>We're here to help! Explore our FAQs, get tips on using the platform, or contact support for further assistance with your e-waste submissions and account.</p>
                 <div className="button-container">
-                    <Link to="/contact-support" className="contact-button">Contact Us</Link>
+                    <Link to="/contact-us" className="contact-button">Contact Us</Link>
                 </div>
             </section>
         </div>
