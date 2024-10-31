@@ -26,6 +26,11 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.report-ewaste-container {
+    margin-top: 80px;
+}
+
+
 h2 {
     margin-bottom: 20px;
     color: black;
@@ -218,6 +223,7 @@ button:hover {
     padding: 20px;
     font-family: Arial, sans-serif;
     color: black;
+    margin-top: 60px;
 }
 
 .report-ewaste-section, 
@@ -291,6 +297,10 @@ h2, h3 {
 }
 
 .header {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -299,6 +309,7 @@ h2, h3 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: #A17D1C;
     border-bottom: 1px solid #F0E3C2;
+    z-index: 1000;
 }
 
 .menu-icon i {
