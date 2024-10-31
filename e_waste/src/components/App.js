@@ -8,6 +8,8 @@ import ChangePassword from "./ChangePassword";
 import ReportEwaste from "./ReportEwaste";
 import Dashboard from "./Dashboard";
 import Header from "./Header";
+import LearnMore from "./LearnMore";
+import ContactUs from "./ContactUs";
 
 function App() {
     return (
@@ -22,6 +24,8 @@ function App() {
                     <Route path="/report-ewaste" element={<ReportEwaste />} />
                     <Route path="/dashboard" element={<Dashboard />} />
                     <Route path="/header" element={<Header />} />
+                    <Route path="/learn-more" element={<LearnMore />} />
+                    <Route path="/contact-us" element={<ContactUs />} />
                 </Routes>
             </div>
         </Router>
