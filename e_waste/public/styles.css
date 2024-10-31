@@ -351,7 +351,106 @@ h2, h3 {
 .account-icon:hover {
   color: #916d17;
 }
-  
+
+.learn-more-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: black;
+    margin-top: 60px;
+}
+
+.learn-more-container h2 {
+    color: #A17D1C;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.info-section {
+    background-color: #FAF7F0;
+    border: 1px solid #F0E3C2;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-section h3 {
+    color: #A17D1C;
+    font-size: 22px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    color: #A17D1C;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.info-section p,
+.info-section ul li {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.info-section ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.did-you-know {
+    background-color: #FFF3E0;
+}
+
+.did-you-know ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.did-you-know ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.did-you-know ul li strong {
+    color: #A17D1C;
+}
+
+.contact-us-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+.contact-us-container p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.contact-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: #A17D1C; 
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
 
 @media (max-width: 768px) {
     h2 {
@@ -383,4 +482,49 @@ h2, h3 {
     .submission-card {
         padding: 10px;
     }
-  }
+
+    .learn-more-container {
+        padding: 15px;
+    }
+
+    .learn-more-container h2 {
+        font-size: 24px;
+    }
+
+    .info-section h3 {
+        font-size: 20px;
+    }
+
+    .info-section p,
+    .info-section ul li {
+        font-size: 14px;
+    }
+
+    .did-you-know h3 {
+        font-size: 20px;
+    }
+
+    .header {
+        padding: 10px 15px;
+    }
+
+    .menu-icon i {
+        font-size: 20px;
+    }
+
+    .title-container h1 {
+        font-size: 16px;
+    }
+
+    .header-icons i {
+        font-size: 18px;
+    }
+
+    .contact-us-container {
+        padding: 15px;
+    }
+
+    .contact-us-container p {
+        font-size: 14px;
+    }
+}
