@@ -10,6 +10,8 @@ import Dashboard from "./Dashboard";
 import Header from "./Header";
 import LearnMore from "./LearnMore";
 import ContactUs from "./ContactUs";
+import Submissions from "./Submissions";
+import EditEwaste from "./EditEwaste";
 
 function App() {
     return (
@@ -26,6 +28,8 @@ function App() {
                     <Route path="/header" element={<Header />} />
                     <Route path="/learn-more" element={<LearnMore />} />
                     <Route path="/contact-us" element={<ContactUs />} />
+                    <Route path="/all-submissions" element={<Submissions />} />
+                    <Route path="/edit-ewaste" element={<EditEwaste />} />
                 </Routes>
             </div>
         </Router>
