@@ -16,7 +16,7 @@ body {
     box-sizing: border-box;
 }
 
-.auth-container, .report-ewaste-container {
+.auth-container, .report-ewaste-container, .edit-ewaste-container {
     max-width: 400px;
     width: 90vw;
     padding: 20px;
@@ -26,7 +26,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.report-ewaste-container {
+.report-ewaste-container, .edit-ewaste-container {
     margin-top: 80px;
 }
 
@@ -452,6 +452,68 @@ h2, h3 {
     text-decoration: underline;
 }
 
+.submissions-page {
+    padding-top: 70px; /* Adjust for header height */
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+.all-submissions-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    width: 100%;
+}
+
+.all-submission-card {
+    width: 100%; /* Expands width for a more prominent look */
+    max-width: 800px;
+    background-color: #FAF7F0;
+    border: 1px solid #F0E3C2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.submission-details {
+    flex: 1;
+}
+
+.submission-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.submission-card h3 {
+    color: #A17D1C;
+    margin-bottom: 10px;
+}
+
+.submission-card p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.edit-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: #A17D1C;
+    color: black;
+}
+
 @media (max-width: 768px) {
     h2 {
       font-size: 20px;  /* Slightly smaller heading for mobile */
@@ -525,6 +587,15 @@ h2, h3 {
     }
 
     .contact-us-container p {
+        font-size: 14px;
+    }
+
+    .submission-card {
+        padding: 10px;
+    }
+
+    .edit-btn {
+        padding: 6px 10px;
         font-size: 14px;
     }
 }
